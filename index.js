@@ -1,0 +1,10 @@
+let express = require('express');
+let config = require('./Config/config');
+let bodyParser = require('body-parser');
+let mongoose = require('mongoose');
+let app = express();
+mongoose.connect(config.dbUrl, { useNewUrlParser: true });
+app.use(bodyParser.json({ limit: '2mb' }));
+app.use(bodyParser.urlencoded({ extended: true, limit: '2mb' }));
+app.use('/', require('./Router/router'));
+app.listen(config.port, () => console.log(`Connecting app running on ${config.port}`));
