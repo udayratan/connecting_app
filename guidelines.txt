@@ -1,0 +1,23 @@
+1. Download Nodejs from https://nodejs.org/en/
+
+
+2. Install Nodejs
+
+3. Open Project in Visual Studio Code
+
+4. Go to Visual Studio Code from
+
+    Menu bar ->  View ->  Terminal 
+
+    Short Cut -->    (ctrl + `)
+
+5. Verify whether nodejs running on terminal by typing following command
+
+    node --version
+
+
+6. If you can see node version then node is running successfully or you have to set the environment variable by quering google.command
+
+7. Run project using 
+
+    node index.js
