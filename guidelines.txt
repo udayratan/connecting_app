@@ -18,6 +18,10 @@
 
 6. If you can see node version then node is running successfully or you have to set the environment variable by quering google.command
 
-7. Run project using 
+7. Install node dependencies
+
+    npm install
+
+8. Run project using 
 
     node index.js
